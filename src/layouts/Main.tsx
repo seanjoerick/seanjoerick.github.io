@@ -1,17 +1,44 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "@components/Navbar";
-import Footer from "@components/Footer";
+import { GridScan } from "@components/background/GridScan";
 
 function Main() {
   return (
     <div className="min-h-screen flex flex-col bg-black text-white">
-      <Navbar />
+      <div
+        style={{
+          position: "fixed",
+          inset: 0,
+          zIndex: 0,
+          pointerEvents: "none",
+        }}
+      >
+        <GridScan
+          sensitivity={0.55}
+          lineThickness={2}
+          linesColor="#392e4e"
+          gridScale={0.1}
+          scanColor="#FF9FFC"
+          scanOpacity={0.4}
+          enablePost
+          bloomIntensity={0.6}
+          chromaticAberration={0.002}
+          noiseIntensity={0.01}
+        />
+      </div>
 
-      <main className="flex-1">
-        <Outlet />
-      </main>
+      <div
+        className="relative flex flex-col min-h-screen"
+        style={{ zIndex: 1 }}
+      >
+        <Navbar />
 
-      <Footer />
+        <main className="flex-1">
+          <Outlet />
+        </main>
+
+        {/* <Footer /> */}
+      </div>
     </div>
   );
 }

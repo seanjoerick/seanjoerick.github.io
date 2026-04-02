@@ -1,7 +1,11 @@
+import Hero from "@components/sections/Hero";
+import Skills from "@components/sections/Skills";
+
 function Home() {
   return (
     <div>
-      <h1>Home</h1>
+      <Hero />
+      <Skills />
     </div>
   );
 }
