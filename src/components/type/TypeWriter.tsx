@@ -41,7 +41,7 @@ function TypeWriter() {
   }, [charIndex, deleting, roleIndex]);
 
   return (
-    <p className="text-[#FF9FFC] text-sm tracking-widest mb-6 font-semibold">
+    <p className="text-[#FF9FFC] text-lg tracking-widest mb-6 font-semibold">
       {text}
     </p>
   );
