@@ -114,7 +114,7 @@ const [row1, row2, row3] = splitArray(allLogos, 3);
 function Skills() {
   return (
     <>
-      <section id="skills" className="flex flex-col items-center py-10">
+      <section id="skills" className="flex flex-col items-center py-16">
         {/* Header */}
         <div className="text-center mb-16 px-8 md:px-24">
           <h2 className="text-base md:text-lg font-bold text-white mb-6 tracking-widest uppercase">

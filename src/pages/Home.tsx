@@ -3,6 +3,7 @@ import Skills from "@components/sections/Skills";
 import Experience from "@components/sections/Experience";
 import Projects from "@components/sections/Projects";
 import Education from "@components/sections/Education";
+import Contact from "@components/sections/Contact";
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       <Experience />
       <Projects />
       <Education />
+      <Contact />
     </div>
   );
 }
