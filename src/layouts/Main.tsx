@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "@components/Navbar";
-import { GridScan } from "@components/background/GridScan";
+import { GridScan } from "@components/react-bits/GridScan";
 
 function Main() {
   return (
