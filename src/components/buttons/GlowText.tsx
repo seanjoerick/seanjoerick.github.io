@@ -1,16 +1,19 @@
-import type { ReactNode } from "react";
+import type { MouseEventHandler, ReactNode } from "react";
 
 interface GlowTextProps {
   children: ReactNode;
   className?: string;
   href?: string;
   glowColor?: string;
+  onClick?: MouseEventHandler<HTMLAnchorElement | HTMLSpanElement>;
 }
 
 export default function GlowText({
   children,
   className = "",
+  href,
   glowColor = "#FF9FFC",
+  onClick,
 }: GlowTextProps) {
   const glowStyle = {
     "--glow-color": glowColor,
@@ -28,8 +31,21 @@ export default function GlowText({
     .replace(/\s+/g, " ")
     .trim();
 
+  if (href) {
+    return (
+      <a
+        href={href}
+        className={baseClasses}
+        style={glowStyle}
+        onClick={onClick}
+      >
+        {children}
+      </a>
+    );
+  }
+
   return (
-    <span className={baseClasses} style={glowStyle}>
+    <span className={baseClasses} style={glowStyle} onClick={onClick}>
       {children}
     </span>
   );

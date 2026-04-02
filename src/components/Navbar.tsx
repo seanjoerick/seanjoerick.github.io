@@ -22,7 +22,7 @@ function Navbar() {
     >
       <div className="w-full max-w-6xl mx-auto flex items-center justify-between">
         {/* Logo */}
-        <GlowText className="font-bold">{"sean(mac)"}</GlowText>
+        <GlowText className="font-bold">sean(mac)</GlowText>
 
         {/* Desktop nav links */}
         <ul className="hidden lg:flex items-center gap-8">
@@ -38,7 +38,7 @@ function Navbar() {
           ))}
         </ul>
 
-        {/* Burger / X */}
+        {/* Mobile Burger */}
         <button
           className="lg:hidden text-white focus:outline-none"
           onClick={() => setOpen((prev) => !prev)}
@@ -50,29 +50,26 @@ function Navbar() {
 
       {/* Mobile dropdown */}
       <ul
-        className="absolute top-0 left-0 right-0 flex flex-col items-center gap-6 pt-20 pb-8 lg:hidden"
-        style={{
-          background: "rgba(0,0,0,0.92)",
-          backdropFilter: "blur(12px)",
-          zIndex: -1,
-          transition: "opacity 0.3s ease, transform 0.3s ease",
-          opacity: open ? 1 : 0,
-          transform: open ? "translateY(0)" : "translateY(-12px)",
-          pointerEvents: open ? "auto" : "none",
-        }}
+        className={`absolute top-16 left-0 right-0 flex flex-col items-center gap-6 pt-4 pb-8 lg:hidden bg-black/90 backdrop-blur-md transition-all duration-300 ${
+          open
+            ? "opacity-100 pointer-events-auto"
+            : "opacity-0 pointer-events-none"
+        }`}
       >
         {navLinks.map((link, i) => (
           <li
             key={link.label}
             style={{
-              transition: `opacity 0.3s ease ${i * 0.05}s, transform 0.3s ease ${i * 0.05}s`,
-              opacity: open ? 1 : 0,
+              transition: `opacity 0.3s ease ${i * 0.05}s, transform 0.3s ease ${
+                i * 0.05
+              }s`,
               transform: open ? "translateY(0)" : "translateY(-8px)",
             }}
           >
             <GlowText
               href={`#${link.label.toLowerCase()}`}
               className="text-xs tracking-widest font-medium"
+              onClick={() => setOpen(false)}
             >
               {link.label}
             </GlowText>
