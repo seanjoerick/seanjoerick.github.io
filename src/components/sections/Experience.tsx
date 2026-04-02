@@ -1,12 +1,14 @@
 import Timeline from "../Timeline";
 import type { TimelineItem } from "../Timeline";
+import OAKTREE from "../../assets/oaktree.webp";
+import PJG from "../../assetS/dr-pjg.webp";
 
 const experiences: TimelineItem[] = [
   {
     title: "Fullstack Engineer",
     subtitle: "Oaktree Innovations",
     period: "Dec 2024 — Jan 2026",
-    icon: "/oaktree.webp",
+    icon: OAKTREE,
     description: [
       "Built an E-commerce platform using Go, gRPC, and Protocol Buffers.",
       "Developed Next.js/TypeScript frontend with Zustand state management.",
@@ -36,7 +38,7 @@ const experiences: TimelineItem[] = [
     title: "IT Support & Developer Intern",
     subtitle: "Dr. Paulino J. Garcia Memorial Research & Medical Center",
     period: "Jan 2024 — May 2024",
-    icon: "/dr-pjg.webp",
+    icon: PJG,
     description: [
       "Engineered an internal Ticketing System for the IMISS department using React and Node.js.",
       "Streamlined technical request workflows, replacing manual reports with a web-based solution.",

@@ -3,6 +3,7 @@ import { IoMail } from "react-icons/io5";
 import GlowText from "../buttons/GlowText";
 import ShimmerButton from "../buttons/ShimmerButton";
 import TypeWriter from "@components/type/TypeWriter";
+import ME from "../../assets/sean.webp";
 
 function Hero() {
   return (
@@ -19,7 +20,7 @@ function Hero() {
           }}
         >
           <img
-            src="/thorfinn.webp"
+            src={ME}
             alt="Sean"
             className="w-64 h-64 md:w-96 md:h-96 object-cover object-top rounded-2xl"
             style={{ border: "2px solid #FF9FFC" }}

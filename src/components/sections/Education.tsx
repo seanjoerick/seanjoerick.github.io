@@ -1,4 +1,8 @@
 import Timeline from "../Timeline";
+import NEUST from "../../assets/neust.webp";
+import ARAULLO from "../../assets/araullo.webp";
+import NEHS from "../../assets/nehs.webp";
+import BALER from "../../assets/baler.webp";
 
 const experiences = [
   {
@@ -7,6 +11,7 @@ const experiences = [
     period: "2020 - 2024",
     current: false,
     badge: "Graduate",
+    icon: NEUST,
     description: [
       "Graduated with a Bachelor's degree in IT, specializing in Database Systems.",
       "Main Programmer (Capstone): Spearheaded the full-lifecycle development of a 'POS Book Inventory System'.",
@@ -27,6 +32,7 @@ const experiences = [
     title: "PHINMA Araullo University",
     subtitle: "Senior High School - GAS-Crim Strand",
     period: "2018 - 2020",
+    icon: ARAULLO,
     description: [
       "Graduated under the General Academic Strand with a focus on Criminology.",
       "Developed strong foundations in research, community involvement, and discipline.",
@@ -37,6 +43,7 @@ const experiences = [
     title: "Nueva Ecija High School",
     subtitle: "Junior High School Graduate",
     period: "2013 - 2018",
+    icon: NEHS,
     description: [
       "Completed secondary education with consistent academic participation.",
       "Engaged in various school-wide activities and technical drafting basics.",
@@ -46,6 +53,7 @@ const experiences = [
     title: "Baler Central School",
     subtitle: "Elementary Graduate | Varsity Athlete",
     period: "GRADUATED 2012",
+    icon: BALER,
     description: [
       "Active Student-Athlete: Served as a Volleyball Varsity Player for the school.",
       "Built early discipline and teamwork skills through competitive sports and training.",

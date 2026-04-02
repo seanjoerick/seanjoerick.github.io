@@ -19,9 +19,9 @@ function Main() {
           linesColor="#392e4e"
           gridScale={0.1}
           scanColor="#FF9FFC"
-          scanOpacity={0.4}
+          scanOpacity={0.18}
           enablePost
-          bloomIntensity={0.6}
+          bloomIntensity={0.35}
           chromaticAberration={0.002}
           noiseIntensity={0.01}
         />
