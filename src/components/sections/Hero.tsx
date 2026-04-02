@@ -42,12 +42,28 @@ function Hero() {
 
           <TypeWriter />
 
-          <p className="text-white/60 text-sm md:text-base leading-relaxed mb-8">
-            A Bachelor of Science in Information Technology graduate (2024),
-            majoring in Database Systems. With 2+ years of experience as a
-            Fullstack Engineer — starting as a freelancer in 2024 building
-            real-world client projects, then joining a company from December
-            2024 to January 2026.
+          <p className="text-white/60 text-xs md:text-sm leading-relaxed mb-8">
+            A{" "}
+            <span className="font-semibold text-white">
+              Bachelor of Science in Information Technology
+            </span>{" "}
+            graduate (<span className="font-semibold text-white">2024</span>),
+            majoring in{" "}
+            <span className="font-semibold text-white">Database Systems</span>.
+            Started as a{" "}
+            <span className="font-semibold text-white">
+              freelance Fullstack Engineer
+            </span>{" "}
+            after graduation, working on real-world client projects. Later that
+            year, secured a{" "}
+            <span className="font-semibold text-white">
+              full-time Fullstack Engineer role
+            </span>{" "}
+            and worked from{" "}
+            <span className="font-semibold text-white">
+              December 2024 to January 2026
+            </span>
+            .
           </p>
 
           <ShimmerButton
