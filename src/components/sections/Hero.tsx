@@ -21,7 +21,7 @@ function Hero() {
           <img
             src="/thorfinn.webp"
             alt="Sean"
-            className="w-48 h-48 md:w-72 md:h-72 object-cover object-top rounded-2xl"
+            className="w-64 h-64 md:w-96 md:h-96 object-cover object-top rounded-2xl"
             style={{ border: "2px solid #FF9FFC" }}
           />
           {/* Overlay */}
