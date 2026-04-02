@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "@components/Navbar";
+import Footer from "@components/Footer";
 import { GridScan } from "@components/react-bits/GridScan";
 
 function Main() {
@@ -37,7 +38,7 @@ function Main() {
           <Outlet />
         </main>
 
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </div>
   );
