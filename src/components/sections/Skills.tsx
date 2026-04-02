@@ -29,8 +29,7 @@ import {
 import { FaCloud, FaAws, FaAmazon } from "react-icons/fa";
 import LogoLoop from "../react-bits/LogoLoop";
 
-// ROW 1 - Languages & Web Technologies
-const row1 = [
+const allLogos = [
   {
     node: <SiTypescript />,
     title: "TypeScript",
@@ -70,10 +69,6 @@ const row1 = [
     title: "Bootstrap",
     href: "https://getbootstrap.com",
   },
-];
-
-// ROW 2 - Databases, Tools & Platforms
-const row2 = [
   { node: <SiMysql />, title: "MySQL", href: "https://mysql.com" },
   {
     node: <SiPostgresql />,
@@ -88,11 +83,7 @@ const row2 = [
   },
   { node: <SiGit />, title: "Git", href: "https://git-scm.com" },
   { node: <SiDocker />, title: "Docker", href: "https://docker.com" },
-  {
-    node: <FaAmazon />,
-    title: "AWS",
-    href: "https://aws.amazon.com",
-  },
+  { node: <FaAmazon />, title: "AWS", href: "https://aws.amazon.com" },
   { node: <SiPostman />, title: "Postman", href: "https://postman.com" },
   {
     node: <SiJira />,
@@ -110,6 +101,16 @@ const row2 = [
   { node: <FaCloud />, title: "Ollama", href: "https://ollama.com" },
 ];
 
+function splitArray<T>(array: T[], parts: number): T[][] {
+  const result: T[][] = Array.from({ length: parts }, () => []);
+  array.forEach((item, index) => {
+    result[index % parts].push(item);
+  });
+  return result;
+}
+
+const [row1, row2, row3] = splitArray(allLogos, 3);
+
 function Skills() {
   return (
     <>
@@ -121,13 +122,13 @@ function Skills() {
           </h2>
 
           <div className="flex justify-center gap-6 mb-4 flex-wrap">
-            <h1 className="text-white text-4xl md:text-5xl font-bold tracking-wide uppercase">
+            <h1 className="text-white text-4xl md:text-5xl tracking-wide uppercase">
               Build
             </h1>
-            <h1 className="text-white text-4xl md:text-5xl font-bold tracking-wide uppercase">
+            <h1 className="text-[#FF9FFC] text-4xl md:text-5xl tracking-wide uppercase">
               Design
             </h1>
-            <h1 className="text-white text-4xl md:text-5xl font-bold tracking-wide uppercase">
+            <h1 className="text-white text-4xl md:text-5xl tracking-wide uppercase">
               Scale
             </h1>
           </div>
@@ -138,7 +139,7 @@ function Skills() {
           </p>
         </div>
 
-        {/* Row 1 - Languages & Frameworks */}
+        {/* Logos */}
         <div className="w-full flex flex-col gap-8">
           <LogoLoop
             logos={row1}
@@ -148,10 +149,8 @@ function Skills() {
             gap={60}
             hoverSpeed={0}
             scaleOnHover
-            ariaLabel="Languages and Frameworks"
+            ariaLabel="Skills Row 1"
           />
-
-          {/* Row 2 - Databases & Tools */}
           <LogoLoop
             logos={row2}
             speed={80}
@@ -160,10 +159,21 @@ function Skills() {
             gap={60}
             hoverSpeed={0}
             scaleOnHover
-            ariaLabel="Databases and Tools"
+            ariaLabel="Skills Row 2"
+          />
+          <LogoLoop
+            logos={row3}
+            speed={80}
+            direction="left"
+            logoHeight={50}
+            gap={60}
+            hoverSpeed={0}
+            scaleOnHover
+            ariaLabel="Skills Row 3"
           />
         </div>
       </section>
+
       <div className="w-3/4 mx-auto border-t border-white/10" />
     </>
   );

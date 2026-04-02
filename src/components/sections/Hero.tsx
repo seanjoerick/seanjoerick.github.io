@@ -22,9 +22,12 @@ function Hero() {
             src="/thorfinn.webp"
             alt="Sean"
             className="w-48 h-48 md:w-72 md:h-72 object-cover object-top rounded-2xl"
-            style={{
-              border: "2px solid #FF9FFC",
-            }}
+            style={{ border: "2px solid #FF9FFC" }}
+          />
+          {/* Overlay */}
+          <div
+            className="absolute inset-0 rounded-2xl"
+            style={{ background: "rgba(0,0,0,0.35)" }}
           />
         </div>
 
