@@ -182,7 +182,7 @@ function Projects() {
                     >
                       {project.link.includes("github")
                         ? "View on GitHub"
-                        : "View project"}
+                        : "Visit project"}
                       <span className="text-base">↗</span>
                     </a>
                   </div>
