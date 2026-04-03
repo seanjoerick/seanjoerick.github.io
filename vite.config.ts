@@ -4,7 +4,7 @@ import path from "path";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  base: "/portfolio-mac/",
+  base: process.env.NODE_ENV === "production" ? "/portfolio-mac/" : "/",
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
