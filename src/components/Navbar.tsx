@@ -22,7 +22,9 @@ function Navbar() {
     >
       <div className="w-full max-w-6xl mx-auto flex items-center justify-between">
         {/* Logo */}
-        <GlowText className="font-bold">sean(mac)</GlowText>
+        <GlowText href="#about" className="font-bold cursor-pointer">
+          sean(mac)
+        </GlowText>
 
         {/* Desktop nav links */}
         <ul className="hidden lg:flex items-center gap-8">
