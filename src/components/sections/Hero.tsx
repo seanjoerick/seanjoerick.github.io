@@ -68,11 +68,16 @@ function Hero() {
           </p>
 
           <ShimmerButton
-            href="#projects"
             className="px-8 py-3 text-sm"
             style={{ borderRadius: "8px" }}
           >
-            Check My CV
+            <a
+              href="https://drive.google.com/drive/folders/1uF55_MrnW3Cf4OEwKs-zXBZQkEulqn3V?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Check My CV
+            </a>
           </ShimmerButton>
 
           {/* SOCIAL BUTTONS - ILALIM NG TEXT */}
