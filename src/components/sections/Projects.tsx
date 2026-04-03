@@ -2,6 +2,8 @@ import { useState } from "react";
 import MACCVBUILDER from "../../assets/macCVbuilder.webp";
 import MEMOIR from "../../assets/memoirBooth.webp";
 
+import { HiArrowUpRight } from "react-icons/hi2";
+
 const projects = [
   {
     id: 1,
@@ -189,7 +191,7 @@ function Projects() {
                       {project.link.includes("github")
                         ? "View on GitHub"
                         : "Visit project"}
-                      <span className="text-base">↗</span>
+                      <HiArrowUpRight className="text-base" />
                     </a>
                   </div>
                 </div>
