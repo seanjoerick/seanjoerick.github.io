@@ -16,11 +16,11 @@ function Main() {
       >
         <GridScan
           sensitivity={0.55}
-          lineThickness={2}
-          linesColor="#392e4e"
+          lineThickness={1}
+          linesColor="#1a1228"
           gridScale={0.1}
           scanColor="#FF9FFC"
-          scanOpacity={0.18}
+          scanOpacity={0.05}
           enablePost
           bloomIntensity={0.35}
           chromaticAberration={0.002}

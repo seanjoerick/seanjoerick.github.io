@@ -39,10 +39,6 @@ function TimelineCard({ item, isLeft, index }: TimelineCardProps) {
   return (
     <div
       ref={ref}
-      /* Responsive Classes: 
-         - Mobile: flex-row (lagging icon sa kaliwa), items-start
-         - Desktop (md): isLeft logic (alternate left/right)
-      */
       className={`relative flex items-start gap-8 md:gap-0 pb-12 md:pb-16 last:pb-0 w-full 
         ${isLeft ? "md:flex-row" : "md:flex-row-reverse"} flex-row`}
       style={{
@@ -58,10 +54,10 @@ function TimelineCard({ item, isLeft, index }: TimelineCardProps) {
         <div
           className="p-5 flex flex-col gap-2 shadow-xl"
           style={{
-            background: "rgba(255,255,255,0.03)",
+            background: "rgba(0,0,0,0.3)",
             border: "1px solid rgba(255,159,252,0.15)",
             borderRadius: "12px",
-            backdropFilter: "blur(10px)",
+            backdropFilter: "blur(21px)",
           }}
         >
           {/* Header Section */}

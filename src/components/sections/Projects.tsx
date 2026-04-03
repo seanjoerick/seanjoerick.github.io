@@ -54,7 +54,7 @@ const projects = [
       "Nodemailer",
     ],
     link: "https://github.com/seanjoerick/mysql-ern-capstone-event-evaluation-sytem",
-    image: "https://img.youtube.com/vi/SelO_Qmc85E/maxresdefault.jpg",
+    image: null,
     demo: "https://youtu.be/SelO_Qmc85E",
   },
   {
@@ -66,7 +66,7 @@ const projects = [
       "A full-stack web app for a fullstack dev exam in 2024, featuring user authentication and CRUD operations.",
     stack: ["React", "Flask", "SQLite", "SQLAlchemy", "Material UI", "Python"],
     link: "https://github.com/seanjoerick/react-flask-crud-with-authentication",
-    image: "https://img.youtube.com/vi/PzR-T5CEejo/maxresdefault.jpg",
+    image: null,
     demo: "https://youtu.be/PzR-T5CEejo",
   },
   {
@@ -122,7 +122,13 @@ function Projects() {
 
         {/* Slideshow */}
         <div className="w-full max-w-5xl px-6 md:px-16">
-          <div className="relative overflow-hidden rounded-2xl border border-white/8 bg-white/3">
+          <div
+            className="relative overflow-hidden rounded-2xl border border-white/8"
+            style={{
+              background: "rgba(0,0,0,0.3)",
+              backdropFilter: "blur(21px)",
+            }}
+          >
             {/* Slide content */}
             <div className="flex min-h-105 flex-col md:flex-row">
               {/* Left — info panel */}

@@ -78,7 +78,13 @@ function Contact() {
 
       {/* Form */}
       <div className="w-full max-w-3xl px-6 md:px-12">
-        <div className="rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md p-6 md:p-8">
+        <div
+          className="rounded-2xl border border-white/10 backdrop-blur-md p-6 md:p-8"
+          style={{
+            background: "rgba(0,0,0,0.3)",
+            backdropFilter: "blur(21px)",
+          }}
+        >
           <form
             ref={formRef}
             onSubmit={sendEmail}
