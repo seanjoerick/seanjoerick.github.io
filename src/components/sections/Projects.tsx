@@ -9,7 +9,7 @@ import MINDMATCH from "../../assets/mind.webp";
 interface Project {
   id: number;
   num: string;
-  tag: ProjectTag;
+  tag: string;
   title: string;
   description: string;
   stack: string[];
