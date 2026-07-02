@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
 
 const roles = [
-  "Fullstack Developer!",
+  "AI Fullstack Engineer!",
   "Problem Solver!",
-  "I build web apps from scratch!",
+  "I build AI-powered apps!",
   "I turn ideas into reality!",
   "I write clean, scalable code!",
+  "I automate workflows with AI!",
 ];
 
 function TypeWriter() {

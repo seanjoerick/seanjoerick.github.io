@@ -35,7 +35,7 @@ function Hero() {
         {/* LEFT - Text */}
         <div className="flex flex-col items-center lg:items-start text-center lg:text-left max-w-xl">
           <p className="text-white/50 text-sm uppercase tracking-widest mb-4">
-            Hello, twin! I'm
+            Hello, I'm
           </p>
           <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">
             Sean Sebastian Macarayo
@@ -51,20 +51,26 @@ function Hero() {
             graduate (<span className="font-semibold text-white">2024</span>),
             majoring in{" "}
             <span className="font-semibold text-white">Database Systems</span>.
-            Started as a{" "}
-            <span className="font-semibold text-white">
-              freelance Fullstack Engineer
-            </span>{" "}
-            after graduation, working on real-world client projects. Later that
-            year, secured a{" "}
+            Has worked with{" "}
+            <span className="font-semibold text-white">freelance clients</span>{" "}
+            and held a{" "}
             <span className="font-semibold text-white">
               full-time Fullstack Engineer role
-            </span>{" "}
-            and worked from{" "}
-            <span className="font-semibold text-white">
-              December 2024 to January 2026
             </span>
-            .
+            , building real-world web applications across different industries.
+            Currently transitioning into{" "}
+            <span className="font-semibold text-white">
+              AI Fullstack Engineering
+            </span>{" "}
+            — actively learning and building AI-powered applications,
+            integrating large language models into real-world fullstack systems.
+            Also diving deep into{" "}
+            <span className="font-semibold text-white">AI automations</span> and{" "}
+            <span className="font-semibold text-white">
+              agentic architectures
+            </span>{" "}
+            — expanding expertise in designing intelligent, automated workflows
+            and systems.
           </p>
 
           <ShimmerButton
